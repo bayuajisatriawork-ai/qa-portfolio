@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ✅ Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+
+    <!-- Favicon (emoji-based, no file needed) -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128100;</text></svg>">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Portfolio Bayu Aji Satria - Manual QA Engineer. Spesialis manual testing, exploratory testing, dan test case design.">
+    <meta property="og:title" content="Bayu Aji Satria - Manual QA Engineer">
+    <meta property="og:description"
+        content="Portfolio Manual QA Engineer berpengalaman dalam manual testing & quality assurance.">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="bg-navy-900 text-gray-300 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-navy-900/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="font-mono text-neon-cyan font-bold text-xl tracking-wider">&lt;Portofolio&gt;</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="block px-3 py-2 text-neon-cyan font-mono text-sm">01. Home</a>
+                        <a href="#about" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">02. About</a>
+                        <a href="#skills" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">03. Skills</a>
+                        <!-- <a href="#projects" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">04. Projects</a> -->
+                        <a href="#contact" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">04.
+                            Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-neon-cyan hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-800 border-b border-neon-cyan/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-neon-cyan font-mono text-sm">01. Home</a>
+                <a href="#about" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">02. About</a>
+                <a href="#skills" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">03. Skills</a>
+                <!-- <a href="#projects" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">04. Projects</a> -->
+                <a href="#contact" class="block px-3 py-2 hover:text-neon-cyan font-mono text-sm">04. Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative bg-grid pt-16">
+        <div class="absolute inset-0 bg-gradient-to-b from-navy-900 via-transparent to-navy-900"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <p class="font-mono text-neon-cyan mb-4 reveal">Hello, World! I am</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6" data-text="Bayu Aji Satria" reveal>
+                Bayu Aji
+                Satria</h1>
+            <div class="h-16 md:h-20 flex items-center justify-center">
+                <span id="typewriter" class="text-2xl md:text-4xl font-mono text-gray-400 cursor-blink"></span>
+            </div>
+            <p class="mt-8 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto reveal">
+                QA Engineer yang teliti dengan kemampuan mendeteksi bug dan memperhatikan pengalaman pengguna. Saya
+                memastikan kualitas perangkat lunak melalui pengujian manual yang ketat, analisis eksploratif, dan
+                dokumentasi yang akurat.
+            </p>
+            <div class="mt-10 flex justify-center gap-4 reveal">
+                <!-- <a href="#projects" class="px-8 py-3 border border-neon-cyan text-neon-cyan font-mono hover:bg-neon-cyan/10 transition-all duration-300 neon-border">
+                    View My Work
+                </a> -->
+                <!-- <a href="#contact"
+                    class="px-8 py-3 bg-neon-cyan/10 border border-neon-cyan/50 text-neon-cyan font-mono hover:bg-neon-cyan/20 transition-all duration-300">
+                    Get In Touch
+                </a> -->
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-neon-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 reveal">
+                    <p class="font-mono text-neon-cyan mb-2">02. About Me</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Quality is in the details.</h2>
+                    <div class="space-y-4 text-gray-400">
+                        <p>
+                            Saya adalah seorang <span class="text-neon-cyan">Manual QA Engineer</span> yang berdedikasi
+                            dengan pengalaman solid dalam memastikan
+                            keunggulan perangkat lunak melalui pengujian manual yang teliti,
+                            dokumentasi pengujian yang detail, dan validasi yang berpusat pada pengguna di seluruh
+                            platform web dan seluler.
+                        </p>
+                        <p>
+                            Pendekatan saya menggabungkan desain <span class="text-white font-semibold">kasus uji</span>
+                            yang terstruktur dengan pengujian eksploratif yang kreatif.
+                            Saya mengkhususkan diri dalam menemukan kasus-kasus ekstrem yang sering terlewatkan oleh
+                            otomatisasi,
+                            memastikan skenario pengguna di dunia nyata tercakup secara menyeluruh sebelum rilis.
+                        </p>
+                        <p>
+                            Saya berkembang di lingkungan Agile, berkolaborasi erat dengan pengembang, manajer produk,
+                            dan pemangku kepentingan untuk membangun kualitas dari awal — bukan hanya menemukan bug,
+                            tetapi juga mencegahnya.
+                        </p>
+                    </div>
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="border border-white/10 p-4 bg-navy-800/50">
+                            <span class="block text-3xl font-bold text-neon-cyan font-mono">2,500+</span>
+                            <span class="text-sm text-gray-400">Test Cases Executed</span>
+                        </div>
+                        <div class="border border-white/10 p-4 bg-navy-800/50">
+                            <span class="block text-3xl font-bold text-neon-cyan font-mono">800+</span>
+                            <span class="text-sm text-gray-400">Bugs Documented</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-neon-cyan to-blue-600 rounded-lg blur opacity-20">
+                        </div>
+                        <div class="relative bg-navy-800 border border-white/10 rounded-lg p-6 font-mono text-sm">
+                            <div class="flex items-center gap-2 mb-4 border-b border-white/10 pb-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                <span class="ml-2 text-gray-500">qa_profile.json</span>
+                            </div>
+                            <pre class="text-gray-300 overflow-x-auto"><code>{
+  "name": "Bayu Aji Satria",
+  "role": "Manual QA Engineer",
+  "location": "Indonesia",
+  "focus": [
+    "Manual Functional Testing",
+    "Exploratory Testing",
+    "UAT & Regression",
+    "Test Case Design"
+  ],
+  "methodology": "Agile / Waterfall",
+  "current_status": "Open to opportunities"
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 md:py-32 bg-navy-800/30 relative">
+        <div class="absolute inset-0 bg-grid opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <p class="font-mono text-neon-cyan mb-2">03. Skills</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Alat & Keahlian</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Test Case Management -->
+                <div
+                    class="bg-navy-900/50 border border-white/5 p-6 rounded-lg hover:border-neon-cyan/50 transition-all duration-300 neon-box reveal">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-neon-cyan/10 rounded text-neon-cyan">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Test Management</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>Jira</span><span
+                                    class="text-neon-cyan">95%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>Dbeaver</span><span
+                                    class="text-neon-cyan">90%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>Postman</span><span
+                                    class="text-neon-cyan">90%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>Kibana/Elastic</span><span
+                                    class="text-neon-cyan">90%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>Firebase</span><span
+                                    class="text-neon-cyan">80%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>AS400</span><span
+                                    class="text-neon-cyan">75%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>SAP</span><span
+                                    class="text-neon-cyan">70%</span></div>
+                            <div class="h-2 bg-navy-700 rounded-full">
+                                <div class="skill-bar h-full bg-neon-cyan rounded-full" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing Types -->
+                <div
+                    class="bg-navy-900/50 border border-white/5 p-6 rounded-lg hover:border-neon-cyan/50 transition-all duration-300 neon-box reveal">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-neon-cyan/10 rounded text-neon-cyan">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Testing Types</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Pengujian
+                            Fungsional</span>
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Pengujian
+                            Eksplorasi</span>
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Pengujian
+                            Regresi</span>
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">UAT</span>
+                        <span class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Smoke
+                            Testing</span>
+                        <span class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Sanity
+                            Testing</span>
+                    </div>
+                </div>
+
+                <!-- Platforms -->
+                <div
+                    class="bg-navy-900/50 border border-white/5 p-6 rounded-lg hover:border-neon-cyan/50 transition-all duration-300 neon-box reveal">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-neon-cyan/10 rounded text-neon-cyan">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Platforms</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Web
+                            Applications</span>
+                        <span class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Mobile
+                            (iOS/Android)</span>
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Responsive
+                            Design</span>
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Cross-Browser</span>
+                        <span
+                            class="px-3 py-1 bg-navy-800 border border-white/10 rounded text-sm text-neon-cyan">Desktop
+                            Apps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-20 md:py-32 bg-navy-800/30 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="reveal">
+                    <div class="text-4xl font-bold text-neon-cyan font-mono mb-2">2,500+</div>
+                    <div class="text-gray-400">Test Cases Executed</div>
+                </div>
+                <div class="reveal">
+                    <div class="text-4xl font-bold text-neon-cyan font-mono mb-2">&lt; 2%</div>
+                    <div class="text-gray-400">Bug Escape Rate</div>
+                </div>
+                <div class="reveal">
+                    <div class="text-4xl font-bold text-neon-cyan font-mono mb-2">100%</div>
+                    <div class="text-gray-400">Requirement Coverage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 relative">
+        <div class="absolute inset-0 bg-grid opacity-30"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 reveal">
+                <p class="font-mono text-neon-cyan mb-2">04. Get In Touch</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Ensure Quality Together</h2>
+                <p class="text-gray-400">
+                    Saat ini saya terbuka untuk peluang baru dan proyek-proyek menarik. Baik Anda membutuhkan
+                    penguji manual yang teliti atau pendukung kualitas untuk tim Anda, kotak masuk saya selalu terbuka.
+                </p>
+            </div>
+
+            <div class="bg-navy-800/50 border border-white/10 rounded-lg p-8 reveal">
+                <form id="contact-form" action="https://formspree.io/f/mdayjbko" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-mono text-neon-cyan mb-2">Name</label>
+                            <input type="text" name="name" required
+                                class="w-full bg-navy-900 border border-white/10 rounded px-4 py-3 text-white focus:border-neon-cyan focus:outline-none transition-colors"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-mono text-neon-cyan mb-2">Email</label>
+                            <input type="email" name="email" required
+                                class="w-full bg-navy-900 border border-white/10 rounded px-4 py-3 text-white focus:border-neon-cyan focus:outline-none transition-colors"
+                                placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-mono text-neon-cyan mb-2">Subject</label>
+                        <input type="text" name="subject" required
+                            class="w-full bg-navy-900 border border-white/10 rounded px-4 py-3 text-white focus:border-neon-cyan focus:outline-none transition-colors"
+                            placeholder="Project Inquiry">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-mono text-neon-cyan mb-2">Message</label>
+                        <textarea name="message" rows="5" required
+                            class="w-full bg-navy-900 border border-white/10 rounded px-4 py-3 text-white focus:border-neon-cyan focus:outline-none transition-colors"
+                            placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn"
+                        class="w-full py-4 bg-neon-cyan/10 border border-neon-cyan text-neon-cyan font-mono font-bold hover:bg-neon-cyan/20 transition-all duration-300 neon-border">
+                        Send Message
+                    </button>
+                    <p id="form-status" class="text-center text-sm font-mono hidden"></p>
+                </form>
+            </div>
+
+            <div class="mt-12 flex justify-center gap-6 reveal">
+                <a href="https://linkedin.com/in/bayujstr" class="text-gray-400 hover:text-neon-cyan transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/bayuajisatriawork-ai"
+                    class="text-gray-400 hover:text-neon-cyan transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/bayujstr/"
+                    class="text-gray-400 hover:text-neon-cyan transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <p class="font-mono text-neon-cyan mb-2"> - Something I've Built - </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1 -->
+                <div
+                    class="group relative bg-navy-800 border border-white/5 rounded-lg overflow-hidden hover:border-neon-cyan/50 transition-all duration-300 reveal">
+                    <a href="https://bayujstr-dashboard.web.app/login.html" target="_blank" rel="noopener">
+                        <div
+                            class="h-48 bg-gradient-to-br from-emerald-500/20 to-neon-cyan/20 flex items-center justify-center">
+                            <i class="fa-solid fa-chart-line text-6xl text-neon-cyan/50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center items-center mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors">
+                                    1. Dashboard Pribadi</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Dashboard pribadi untuk memantau aktivitas harian, pengelolaan tugas & keuangan,
+                                serta
+                                integrasi kalender dalam satu tampilan terpusat.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Ringkasan Harian (Daily Overview)
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Manajemen Tugas (Task Management)
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Pengelolaan Keuangan (Finance Tracker)
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Desain & UX Responsive
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Keamanan & Privasi (Firebase Auth)
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="group relative bg-navy-800 border border-white/5 rounded-lg overflow-hidden hover:border-neon-cyan/50 transition-all duration-300 reveal">
+                    <a href="https://wedding-test-5424b.web.app/login/" target="_blank" rel="noopener">
+                        <div
+                            class="h-48 bg-gradient-to-br from-emerald-500/20 to-neon-cyan/20 flex items-center justify-center">
+                            <i class="fa-solid fa-heart text-6xl text-neon-cyan/50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center items-center mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors">
+                                    2. Wedding Invitation</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Wedding Invitation Manager untuk mengelola undangan pernikahan secara online dengan
+                                mudah. Setiap akun dapat mengelola satu acara pernikahan.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Firebase Full-Stack Integration
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Manajemen Tamu Undangan (Core Feature)
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Sistem Komentar & RSVP
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Desain & UX Responsive
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Keamanan & Privasi (Firebase Auth)
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="group relative bg-navy-800 border border-white/5 rounded-lg overflow-hidden hover:border-neon-cyan/50 transition-all duration-300 reveal">
+                    <a href="https://untungku.vercel.app" target="_blank" rel="noopener">
+                        <div
+                            class="h-48 bg-gradient-to-br from-emerald-500/20 to-neon-cyan/20 flex items-center justify-center">
+                            <i class="fa-solid fa-store text-6xl text-neon-cyan/50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center items-center mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors">
+                                    3. UntungKu</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Aplikasi manajemen penjualan untuk membantu pelaku usaha kecil mencatat transaksi,
+                                memantau stok, dan melihat laporan penjualan secara real-time.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Dashboard Penjualan
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Manajemen Transaksi & Stok
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Laporan Penjualan
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Sistem Login & Autentikasi
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Desain & UX Responsive
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div
+                    class="group relative bg-navy-800 border border-white/5 rounded-lg overflow-hidden hover:border-neon-cyan/50 transition-all duration-300 reveal">
+                    <a href="https://fulusku.vercel.app/" target="_blank" rel="noopener">
+                        <div
+                            class="h-48 bg-gradient-to-br from-neon-cyan/20 to-purple-500/20 flex items-center justify-center">
+                            <i class="fa-solid fa-wallet text-6xl text-neon-cyan/50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center items-center mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors">
+                                    4. FulusKu</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Aplikasi pencatatan keuangan pribadi dengan fitur anggaran bulanan, target tabungan, dan
+                                integrasi Telegram bot untuk mencatat transaksi langsung dari chat.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Anggaran Bulanan & Kategori
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Target Tabungan
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Riwayat & Trend Transaksi
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Integrasi Telegram Bot
+                                </li>
+                                <li class="flex text-sm text-gray-500 font-mono items-center gap-2">
+                                    <span class="text-neon-cyan">></span> Desain & UX Responsive
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div
+                    class="group relative bg-navy-800 border border-white/5 rounded-lg overflow-hidden hover:border-neon-cyan/50 transition-all duration-300 reveal">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+                        <div
+                            class="h-48 bg-gradient-to-br from-neon-cyan/20 to-purple-500/20 flex items-center justify-center">
+                            <i class="fa-solid fa-bolt text-6xl text-neon-cyan/50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center items-center mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors">
+                                    Coming Soon</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-6 bg-navy-900">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left">
+            <span class="font-mono text-neon-cyan font-bold text-xl tracking-wider">&lt;/Portofolio&gt;</span>
+            <p class="font-mono text-xs text-gray-500">Built by Bayu Aji Satria</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
